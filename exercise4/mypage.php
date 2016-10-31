@@ -1,186 +1,234 @@
 <html>
-<head>
-<title>
-My Own Webpage
-</title>
-<style>
-body {
-text-align : center;
-font-family: "simplifica";
-font-size: 50px;
-}
-a:link {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:active {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-table {
-font-family: "simplifica";
-font-size: 30px;
-}
-button {
-    background-color: white;
-    color: black;
-    border: white;
-	font-family: simplifica;
-	font-size: 32px;
-}
+	<head>
+		<title>
+			TEACUP
+		</title>
+		<style>
+			body {
+				text-align : center;
+				font-family: "simplifica";
+				font-size: 50px;
+			}
+			
+			a:link {
+				color: black;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			
+			a:visited {
+				color: black;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: red;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			
+			a:active {
+				color: black;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			
+			table {
+				font-family: "simplifica";
+				font-size: 30px;
+			}
+			
+			button {
+				background-color: white;
+				color: black;
+				border: white;
+				font-family: simplifica;
+				font-size: 32px;
+			}
+			
+			button:hover {
+				background-color: white;
+				color: red;
+			}
+			
+			audio{
+				display:none;
+			}
+			
+			.input{
+				column-count: 2;
+				column-gap: 30px;
+				column-rule-style: none;
+				font-size: 19px;	
+			}
+			
+			.col1{
+				float:right;
+			}
+			
+			.col2{
+				float:left;
+			}
+			
+			.error{color: #FF0000;}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		ANTONIO SALVADOR SEBASTIAN GARINGA </br>
+		<img src = "pic1.jpg" style = "width: 512px; height: 383px"></br>
 
-button:hover {
-    background-color: white;
-    color: red;
-	
-}
-audio{
-	display:none;
-}
-</style>
-</head>
+		INFORMATION 
 
-<body>
-ANTONIO SALVADOR SEBASTIAN GARINGA </br>
-<img src = "pic1.jpg" style = "width: 512px; height: 383px"></br>
+			<table align ="center">
 
-INFORMATION 
+				<tr>
+					<td>NICKNAME</td>
+					<td>ANTONIO</td>
+				</tr>
 
-<table align ="center">
+				<tr>
+					<td>HOBBIES</td>
+					<td>MAKING ART </td>
+				</tr>
 
-<tr>
-<td>NICKNAME</td>
-<td>ANTONIO</td>
-</tr>
+				<tr>
+					<td>INTERESTS</td>
+					<td>ART , MUSIC , ART</td>
+				</tr>
 
-<tr>
-<td>HOBBIES</td>
-<td>MAKING ART </td>
-</tr>
+				<tr>
+					<td>FAVOURITE WEBSITE</td>
+					<td><a href="https://www.youtube.com/">YOUTUBE</a></td>
+				</tr>
+			</table>
 
-<tr>
-<td>INTERESTS</td>
-<td>ART , MUSIC , ART</td>
-</tr>
+		<h1>CREEP</h1>
 
-<tr>
-<td>FAVOURITE WEBSITE</td>
-<td><a href="https://www.youtube.com/">YOUTUBE</a></td>
-</tr>
-</table>
+		<h id="Q1">WHAT DO YOU USUALLY DO WHEN YOU'RE HOME ALONE?</h>
+		<button type="button" onclick="document.getElementById('Q1').innerHTML = 'CRY'">WANT AN ANSWER? CLICK HERE</button>
 
-<h1>CREEP</h1>
+		<h id="Q2">WHY CAN'T YOU BE LIKE YOUR SISTER?</h>
+		<button type="button" onclick="document.getElementById('Q2').innerHTML = 'JUST LUCKY I GUESS'">CLICKING THIS IS A MUST</button>
 
-<h id="Q1">WHAT DO YOU USUALLY DO WHEN YOU'RE HOME ALONE?</h>
-<button type="button" onclick="document.getElementById('Q1').innerHTML = 'CRY'">WANT AN ANSWER? CLICK HERE</button>
-<h id="Q2">WHY CAN'T YOU BE LIKE YOUR SISTER?</h>
-<button type="button" onclick="document.getElementById('Q2').innerHTML = 'JUST LUCKY I GUESS'">CLICKING THIS IS A MUST</button>
+		<h id="Q3">WHY ARE YOU SO QUIET?</h>
+		<button type="button" onclick="document.getElementById('Q3').innerHTML = 'I AM STUDYING TO BE A MIME'">CLICKBAIT</button>
 
-<h id="Q3">WHY ARE YOU SO QUIET?</h>
-<button type="button" onclick="document.getElementById('Q3').innerHTML = 'I AM STUDYING TO BE A MIME'">CLICKBAIT</button>
+		<h id="Q4">DO YOU HATE PEOPLE?</h>
+		<button type="button" onclick="document.getElementById('Q4').innerHTML = 'ONLY PEOPLE WHO ASK ME THAT QUESTION'">CAN'T THINK OF ANYTHING ELSE TO PUT IN THIS BUTTON</button>
 
-<h id="Q4">DO YOU HATE PEOPLE?</h>
-<button type="button" onclick="document.getElementById('Q4').innerHTML = 'ONLY PEOPLE WHO ASK ME THAT QUESTION'">CAN'T THINK OF ANYTHING ELSE TO PUT IN THIS BUTTON</button>
-
-<h id="Q5">BEST TRAIT</h>
-<button type="button" onclick="document.getElementById('Q5').innerHTML = 'SARCASM'">JUST CLICK THIS</button>
-
-<audio >
-  
-  <source src="Go Cozy - Glimmer - 02 Fruit Flies.mp3" type="audio/mpeg">
-</audio>
-
-<?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "NAME IS REQUIRED ";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed"; 
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format"; 
-    }
-  }
-    
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL"; 
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
-<h3>WANT TO SEND A MESSAGE? SCROLL DOWN</h3>
-
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  
-  Website: <input type="text" name="website" value="<?php echo $website;?>">
-  <span class="error"><?php echo $websiteErr;?></span>
-  
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <span class="error">* <?php echo $genderErr;?></span>
-  
-  <input type="submit" name="submit" value="Submit">  
-</form>
+		<h id="Q5">BEST TRAIT</h>
+		<button type="button" onclick="document.getElementById('Q5').innerHTML = 'SARCASM'">JUST CLICK THIS</button>
 
 
-</body>
+		<audio autoplay> 
+		  <source src="Go Cozy - Glimmer - 02 Fruit Flies.mp3" type="audio/mpeg">
+		</audio>
+
+		<?php
+		$nameErr = $nNameErr = $emailErr = $genderErr = $cNumErr = $commentErr = "";
+		$name = $nName = $email = $hAd = $gender = $cNum = $comment = "";
+
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		  if (empty($_POST["name"])) {
+			$nameErr = "NAME IS REQUIRED ";
+		  } else {
+			$name = test_input($_POST["name"]);
+			if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+			  $nameErr = "ONLY LETTERS ARE ALLOWED DUDE"; 
+			}
+		  }
+		  
+		  if (empty($_POST["nName"])) {
+			$nNameErr = "NICKNAME IS REQUIRED ";
+		  } else {
+			$nName = test_input($_POST["nName"]);
+			if (!preg_match("/^[a-zA-Z ]*$/",$nName)) {
+			  $nNameErr = "ONLY LETTERS ARE ALLOWED DUDE"; 
+			}
+		  }
+		  
+		  if (empty($_POST["email"])) {
+			$emailErr = "E-MAIL IS REQUIRED MAYNE";
+		  } else {
+			$email = test_input($_POST["email"]);
+			if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			  $emailErr = "INVALID EMAIL FORMAT MAYNE"; 
+			}
+		  }
+		  
+		  if (empty($_POST["hAd"])) {
+			$hAd = "";
+		  } else {
+			$hAd = test_input($_POST["hAd"]);
+		  }
+		  
+		   if (empty($_POST["gender"])) {
+			$genderErr = "GENDER IS REQUIRED";
+		  } else {
+			$gender = test_input($_POST["gender"]);
+		  }
+		  
+		  if (empty($_POST["cNum"])) {
+			$cNumErr = "NUMBER IS REQUIRED";
+		  } else {
+			$cNum = test_input($_POST["cNum"]);
+			if (!filter_var($cNum, FILTER_VALIDATE_INT) === TRUE) {
+			  $cNumErr = "NUMBERS ONLY MAYNE"; 
+			}
+		  }
+		  
+		  if (empty($_POST["comment"])) {
+			$comment = "";
+		  } else {
+			$comment = test_input($_POST["comment"]);
+		  }
+		}
+
+		function test_input($data) {
+		  $data = trim($data);
+		  $data = stripslashes($data);
+		  $data = htmlspecialchars($data);
+		  return $data;
+		}
+		?>
+
+		<h3>WANT TO SEND A MESSAGE? SCROLL DOWN</h3>
+
+		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+			<div class="input">
+				<div class="col1">
+					NAME:<input type="text" name="name" value="<?php echo $name;?>">
+					<span class="error"> <?php echo $nameErr;?></span>
+					<br><br>
+					NICKNAME:<input type="text" name="nName" value="<?php echo $nName;?>">
+					<span class="error"> <?php echo $nNameErr;?></span>
+					<br><br>
+					E-MAIL: <input type="text" name="email" value="<?php echo $email;?>">
+					<span class="error"> <?php echo $emailErr;?></span>
+					<br><br>
+					ADDRESS: <textarea name="hAd" rows="3" cols="35"><?php echo $hAd;?></textarea>
+				</div>
+				<div class="col2">
+					GENDER:
+					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">FEMALE
+					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">MALE
+					<span class="error"> <?php echo $genderErr;?></span>
+					<br><br>
+					CELLPHONE NUMBER:<input type="cNum" name="cNum" value="<?php echo $cNum;?>">
+					<span class="error"> <?php echo $cNumErr;?></span>
+					<br><br>
+					COMMENT: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+					<br><br>
+				</div>
+			</div>
+			
+			<input type="submit" name="Submit" value="SUBMIT" 
+			style="background-color: white; color: red; border: white; font-family: simplifica; font-size: 35px; ">
+			
+		</form>
+	</body>
 </html>
