@@ -1,3 +1,27 @@
+<?php
+include_once 'dbconfig.php';
+if(isset($_POST['submit']))
+{
+ // variables for input data
+ $name = $_POST['name'];
+ $nName = $_POST['nName'];
+ $email = $_POST['email'];
+ $hAd = $_POST['hAd'];
+ $gender = $_POST['gender'];
+ $cNum = $_POST['cNum'];
+ $comment = $_POST['comment'];
+ // variables for input data
+ 
+ // sql query for inserting data into database
+ 
+        $sql_query = "INSERT INTO users(name,nName,email,hAd,gender,cNum,message) VALUES ('$name','$nName','$email','$hAd','$gender','$cNum','$comment')";
+ mysqli_query($con,$sql_query);
+        
+        // sql query for inserting data into database
+ 
+}
+?>
+
 <html>
 	<head>
 		<title>
@@ -60,7 +84,8 @@
 				column-count: 2;
 				column-gap: 30px;
 				column-rule-style: none;
-				font-size: 19px;	
+				font-size: 19px;
+				
 			}
 			
 			.col1{
@@ -72,6 +97,11 @@
 			}
 			
 			.error{color: #FF0000;}
+			
+			a.button{
+				float: right;
+				font-size: 19px;
+			}
 			
 			
 			
@@ -124,7 +154,7 @@
 		<button type="button" onclick="document.getElementById('Q5').innerHTML = 'SARCASM'">JUST CLICK THIS</button>
 
 
-		<audio autoplay> 
+		<audio > 
 		  <source src="Go Cozy - Glimmer - 02 Fruit Flies.mp3" type="audio/mpeg">
 		</audio>
 
@@ -176,7 +206,7 @@
 			$cNumErr = "NUMBER IS REQUIRED";
 		  } else {
 			$cNum = test_input($_POST["cNum"]);
-			if (!filter_var($cNum, FILTER_VALIDATE_INT) === TRUE) {
+			if (!filter_var($cNum, FILTER_VALIDATE_INT) === FALSE) {
 			  $cNumErr = "NUMBERS ONLY MAYNE"; 
 			}
 		  }
@@ -198,10 +228,10 @@
 
 		<h3>WANT TO SEND A MESSAGE? SCROLL DOWN</h3>
 
-		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+		<form method="post" >
 			<div class="input">
 				<div class="col1">
-					NAME:<input type="text" name="name" value="<?php echo $name;?>">
+					NAME:<input type="text"  name="name" value="<?php echo $name;?>">
 					<span class="error"> <?php echo $nameErr;?></span>
 					<br><br>
 					NICKNAME:<input type="text" name="nName" value="<?php echo $nName;?>">
@@ -214,9 +244,10 @@
 				</div>
 				<div class="col2">
 					GENDER:
-					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">FEMALE
-					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">MALE
+					<input type="radio" name="gender" value="Female"/>FEMALE
+					<input type="radio" name="gender" value="Male"/>MALE
 					<span class="error"> <?php echo $genderErr;?></span>
+					
 					<br><br>
 					CELLPHONE NUMBER:<input type="cNum" name="cNum" value="<?php echo $cNum;?>">
 					<span class="error"> <?php echo $cNumErr;?></span>
@@ -226,9 +257,10 @@
 				</div>
 			</div>
 			
-			<input type="submit" name="Submit" value="SUBMIT" 
+			<input type="submit" name="submit" value="SUBMIT" 
 			style="background-color: white; color: red; border: white; font-family: simplifica; font-size: 35px; ">
 			
 		</form>
+		<a href="index.php" class=button>MESSAGES ARE HERE DUDE!</a>
 	</body>
 </html>
