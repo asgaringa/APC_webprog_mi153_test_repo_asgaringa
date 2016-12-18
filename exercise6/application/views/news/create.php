@@ -47,22 +47,27 @@
             <td><label for="Email">Email</label></td>
             <td><input type="text" name="email" rows="10" cols="40"></input></td>
         </tr>
+		
 		<tr>
             <td><label for="Home_Address">Home Address</label></td>
             <td><input type="text" name="hAd" rows="10" cols="40"></input></td>
         </tr>
+		
 		<tr>
             <td><label for="Gender">Gender</label></td>
             <td><input type="text" name="gender" rows="10" cols="40"></input></td>
         </tr>
+		
 		<tr>
             <td><label for="Cp_Num">Cellphone number</label></td>
             <td><input type="text" name="cNum" rows="10" cols="40"></input></td>
         </tr>
+		
 		<tr>
             <td><label for="Comment">Comment</label></td>
             <td><input type="text" name="message" rows="10" cols="40"></input></td>
         </tr>
+		
         <tr>
             <td></td>
             <td><input type="submit" class="button" name="submit" value="SUBMIT" /></td>
