@@ -71,6 +71,12 @@
 				float: right;
 				font-size: 19px;
 			}
+			tr{
+				text-align:center;
+			}
+			td{
+				padding: 0 35px 0 35px;
+			}
 	</style>
 	</head>
 
@@ -122,36 +128,36 @@
 		<button type="button" onclick="document.getElementById('Q5').innerHTML = 'SARCASM'">JUST CLICK THIS</button><br><br>
 
 		
-		<a href="<?php echo site_url('news/create'); ?>">WANT TO SEND A MESSAGE? CLICK HERE!</a></p><br>
+		<a href="<?php echo site_url('news/create'); ?>">WANT TO SEND A MESSAGE? CLICK HERE!</a><br>
 		
-		
-<div id = "Visitors">
-<h2><?php echo $title; ?></h2>
 
-<table border='1' cellpadding='4'>
+<h2>MESSAGES</h2>
+
+<table align="center">
     <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Nickname</strong></td>
-		<td><strong>Email</strong></td>
-        <td><strong>Home_Address</strong></td>
-		<td><strong>Gender</strong></td>
-        <td><strong>Cp_Num</strong></td>
-        <td><strong>Comment</strong></td>
-		<td><strong>Action</strong></td>
-    </tr>
+		
+        <td>NAME</td>
+        <td>NICKNAME</td>
+		<td>EMAIL</td>
+        <td>ADDRESS</td>
+		<td>GENDER</td>
+        <td>PHONE NUMBER</td>
+        <td>COMMENT</td>
+		<td>OPERATIONS</td>
+		
+	</tr>
 <?php foreach ($userinfo as $news_item): ?>
         <tr>
-            <td><?php echo $news_item['Name']; ?></td>
-			<td><?php echo $news_item['Nickname']; ?></td>
-			<td><?php echo $news_item['Email']; ?></td>
-			<td><?php echo $news_item['Home_Address']; ?></td>
-			<td><?php echo $news_item['Gender']; ?></td>
-			<td><?php echo $news_item['Cp_Num']; ?></td>
-			<td><?php echo $news_item['Comment']; ?></td>
+            <td><?php echo $news_item['name']; ?></td>
+			<td><?php echo $news_item['nName']; ?></td>
+			<td><?php echo $news_item['email']; ?></td>
+			<td><?php echo $news_item['hAd']; ?></td>
+			<td><?php echo $news_item['gender']; ?></td>
+			<td><?php echo $news_item['cNum']; ?></td>
+			<td><?php echo $news_item['message']; ?></td>
             <td>
-                <a href="<?php echo site_url('news/'.$news_item['User_ID']); ?>">View</a> | 
-                <a href="<?php echo site_url('news/edit/'.$news_item['User_ID']); ?>">Edit</a> | 
-                <a href="<?php echo site_url('news/delete/'.$news_item['User_ID']); ?>" onClick="return confirm('Are you sure you want to delete?')">Delete</a>
+                <a href="<?php echo site_url('news/edit/'.$news_item['User_ID']); ?>">EDIT</a> | 
+                <a href="<?php echo site_url('news/delete/'.$news_item['User_ID']); ?>" onClick="return confirm('Are you sure you want to delete?')">DELETE</a>
             </td>
         </tr>
 <?php endforeach; ?>
