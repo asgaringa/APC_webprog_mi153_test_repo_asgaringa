@@ -76,107 +76,55 @@
 
 		<body>
 		<center>
-			<table id="PI">
-			<tr>
-				<th id="PI">Field</th>
-				<th id="PI">Information</th>
-			</tr>
-			<tr>
-				<td id="PI">Name</td>
-				<td id="PI">Gabriel Angelo Agito Ngceen</td>
-			</tr>
-			<tr>
-				<td id="PI">Nickname:</td>
-				<td id="PI">Gabby/Gab</td>
-			</tr>
-			<tr>
-				<td id="PI">Birthdate:</td>
-				<td id="PI">January 1, 2000</td>
-			</tr>
-			<tr>
-				<td id="PI">Age:</td>
-				<td id="PI">16</td>
-			</tr>
-			<tr>
-				<td id="PI">Course:</td>
-				<td id="PI">BS Information Technology, Specializing in mobile and internet technology</td>
-			</tr>
-			</table>
+			ANTONIO SALVADOR SEBASTIAN GARINGA<br>
+			<img src ="<?php echo base_url('Images/pic1.jpg');?>" style = "width: 512px; height: 383px"><br>
+			
+			INFORMATION
+			
+				<table align ="center">
 
-			<button type="button" onclick="document.getElementById('table').style.fontSize='35px'">
-			Enlarge
-			</button>
+				<tr>
+					<td>NICKNAME</td>
+					<td>DARTH VADER</td>
+				</tr>
 
-			<p>
-			<br>Favorite websites as pastime:
-			<br><a href= "https://www.youtube.com"><img border="0" alt="Youtube" src="<?php echo base_url('Images/youtube.jpg');?>" width=100 height=100></a>
-			<a href= "https://www.facebook.com"><img border="0" alt="Facebook" src="<?php echo base_url('Images/facebook.jpg');?>" width=100 height=100></a>
-			<a href= "https://www.twitter.com"><img border="0" alt="Twitter" src="<?php echo base_url('Images/twitter.jpg');?>" width=100 height=100></a>
-			</p>
+				<tr>
+					<td>HOBBIES</td>
+					<td>MAKING ART </td>
+				</tr>
 
-			<p>
-			<br>Favorite games:
-			<br><a href= "https://lol.garena.ph/"><img border="0" alt="League of Legends" src="<?php echo base_url('Images/lol.jpg');?>" width=100 height=100></a>
-			<a href= "http://store.steampowered.com/app/316010/"><img border="0" alt="Magic:The Gathering" src="<?php echo base_url('Images/MTG.jpg');?>" 
+				<tr>
+					<td>INTERESTS</td>
+					<td>ART , MUSIC , ART</td>
+				</tr>
 
-width=100 height=100></a>
-			<a href= "https://minecraft.net/en/"><img border="0" alt="Minecraft" src="<?php echo base_url('Images/minecraft.jpg');?>" width=100 height=100></a>
-			</p>
+				<tr>
+					<td>FAVOURITE WEBSITE</td>
+					<td><a href="https://www.youtube.com/">YOUTUBE</a></td>
+				</tr>
+				</table>
 
-			<h2> Trivia! </h2>
+			<h1>CREEP</h1>
 
-			<p>
-				1. My most common gaming username:
-			</p>
+			<h id="Q1">WHAT DO YOU USUALLY DO WHEN YOU'RE HOME ALONE?</h>
+		<button type="button" onclick="document.getElementById('Q1').innerHTML = 'CRY'">WANT AN ANSWER? CLICK HERE</button>
 
-			<p id="q1">
-				ANSWER
-			</p>
+		<h id="Q2">WHY CAN'T YOU BE LIKE YOUR SISTER?</h>
+		<button type="button" onclick="document.getElementById('Q2').innerHTML = 'JUST LUCKY I GUESS'">CLICKING THIS IS A MUST</button>
 
-			<button type="button" onclick="document.getElementById('q1').innerHTML = 'NZAAXD or VoidDoubleA'">Click to see answer</button>
+		<h id="Q3">WHY ARE YOU SO QUIET?</h>
+		<button type="button" onclick="document.getElementById('Q3').innerHTML = 'I AM STUDYING TO BE A MIME'">CLICKBAIT</button>
 
-			<p>
-				2. My favorite subject:
-			</p>
+		<h id="Q4">DO YOU HATE PEOPLE?</h>
+		<button type="button" onclick="document.getElementById('Q4').innerHTML = 'ONLY PEOPLE WHO ASK ME THAT QUESTION'">CAN'T THINK OF ANYTHING ELSE TO PUT IN THIS BUTTON</button>
 
-			<p id="q2">
-				ANSWER
-			</p>
+		<h id="Q5">BEST TRAIT</h>
+		<button type="button" onclick="document.getElementById('Q5').innerHTML = 'SARCASM'">JUST CLICK THIS</button><br><br>
 
-			<button type="button" onclick="document.getElementById('q2').innerHTML = 'Anything that has Math'">Click to see answer</button>
-
-			<p>
-				3. How long have I been playing Magic?
-			</p>
-
-			<p id="q3">
-				ANSWER
-			</p>
-
-			<button type="button" onclick="document.getElementById('q3').innerHTML = 'Started on September 2016'">Click to see answer</button>
-
-			<p>
-				4. What else do you do in your free time?
-			</p>
-
-			<p id="q4">
-				ANSWER
-			</p>
-
-			<button type="button" onclick="document.getElementById('q4').innerHTML = 'Play on my PS3, or play basketball with friends.'">Click to see answer</button>
-
-			<p>
-				5. Where do you go to buy magic cards?
-			</p>
-
-			<p id="q5">
-				ANSWER
-			</p>
-
-			<button type="button" onclick="document.getElementById('q5').innerHTML = 'Hobby shops in taft or SM Megamall, or in Neutral grounds.'">Click to see answer</button>
-
-			</center>
-
+		
+		<a href="<?php echo site_url('news/create'); ?>">WANT TO SEND A MESSAGE? CLICK HERE!</a></p><br>
+		
+		
 <div id = "Visitors">
 <h2><?php echo $title; ?></h2>
 
