@@ -1,14 +1,14 @@
 <?php
-echo $news_item['Name'];
+echo $news_item['name'];
 echo "<br>";
-echo $news_item['Nickname'];
+echo $news_item['nName'];
 echo "<br>";
-echo $news_item['Email'];
+echo $news_item['email'];
 echo "<br>";
-echo $news_item['Home_Address'];
+echo $news_item['hAd'];
 echo "<br>";
-echo $news_item['Gender'];
+echo $news_item['gender'];
 echo "<br>";
-echo $news_item['Cp_Num'];
+echo $news_item['cNum'];
 echo "<br>";
-echo $news_item['Comment'];
+echo $news_item['message'];
