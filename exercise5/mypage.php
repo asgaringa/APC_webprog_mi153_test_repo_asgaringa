@@ -57,7 +57,7 @@
 			
 			table {
 				font-family: "simplifica";
-				font-size: 32px;
+				font-size: 30px;
 			}
 			
 			button {
