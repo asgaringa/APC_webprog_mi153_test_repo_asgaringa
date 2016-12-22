@@ -64,7 +64,7 @@
         </tr>
 		
 		<tr>
-            <td><label for="Comment">Comment</label></td>
+            <td><label for="Comment">COMMENT</label></td>
             <td><input type="text" name="message" rows="10" cols="40"></input></td>
         </tr>
 		
