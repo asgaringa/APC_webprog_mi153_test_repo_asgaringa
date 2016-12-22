@@ -80,7 +80,7 @@
 				<th>GENDER</th>
 				<th>CELLPHONE NUMBER</th>
 				<th>COMMENT</th>
-				<th colspan="3">OPERATIONS</th>		
+				<th colspan="2">OPERATIONS</th>		
     
 				<?php
 					// WHAT'S INSIDE THE TABLE
