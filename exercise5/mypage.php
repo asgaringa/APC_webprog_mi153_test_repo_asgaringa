@@ -152,7 +152,7 @@
 
 			if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				if (empty($_POST["name"])) {
-				$nameErr = "NAME IS REQUIRED ";
+				$nameErr = "NAME IS REQUIRED MAYNE! ";
 			} else {
 				$name = test_input($_POST["name"]);
 				if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
