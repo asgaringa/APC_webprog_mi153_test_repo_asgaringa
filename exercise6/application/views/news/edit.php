@@ -27,7 +27,7 @@
 	}
 </style>
 
-<h1>EDIT YOUR DATA HERE</h1>
+<h1>EDIT YOUR DATA HERE!</h1>
  
 	<?php echo validation_errors(); ?>
 	<?php echo form_open('news/edit/'.$news_item['User_ID']); ?>
