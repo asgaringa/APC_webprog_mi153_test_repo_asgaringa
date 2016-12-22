@@ -59,7 +59,7 @@
         </tr>
 		
 		<tr>
-            <td><label for="Cp_Num">Cellphone number</label></td>
+            <td><label for="Cp_Num">CELLPHONE NUMBER</label></td>
             <td><input type="text" name="cNum" rows="10" cols="40"></input></td>
         </tr>
 		
