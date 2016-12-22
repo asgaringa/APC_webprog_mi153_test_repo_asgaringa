@@ -96,7 +96,7 @@
 		</head>
 			<body>
 				<center>
-					<label>NEED TO CHANGE SOMETHING? CHANGE IT HERE!</label>
+					<label>NEED TO CHANGE SOMETHING TO LITERALLY NOTHING? CHANGE IT HERE!</label>
 					<br><br>
 					<div id="content">
 						<form method="post">
