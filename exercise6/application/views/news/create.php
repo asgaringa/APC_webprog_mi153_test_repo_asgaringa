@@ -44,7 +44,7 @@
         </tr>
 		
 		<tr>
-            <td><label for="Email">Email</label></td>
+            <td><label for="Email">EMAIL</label></td>
             <td><input type="text" name="email" rows="10" cols="40"></input></td>
         </tr>
 		
