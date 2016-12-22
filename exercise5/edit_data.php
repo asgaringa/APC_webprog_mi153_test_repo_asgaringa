@@ -15,7 +15,7 @@
 		$hAd = $_POST['hAd'];
 		$gender = $_POST['gender'];
 		$cNum = $_POST['cNum'];
-		$comment = $_POST['comment'];
+		$comment = $_POST['message'];
 		// variables for input data
 
 		// sql query for update data into database
