@@ -54,7 +54,7 @@
         </tr>
 		
 		<tr>
-            <td><label for="Gender">Gender</label></td>
+            <td><label for="Gender">GENDER</label></td>
             <td><input type="text" name="gender" rows="10" cols="40"></input></td>
         </tr>
 		
