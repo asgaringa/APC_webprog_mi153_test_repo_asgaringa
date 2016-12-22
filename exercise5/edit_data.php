@@ -70,7 +70,7 @@
 					color: black;
 					border: white;
 					font-family: simplifica;
-					font-size: 30px;
+					font-size: 32 px;
 					text-align: center;
 				}
 				
