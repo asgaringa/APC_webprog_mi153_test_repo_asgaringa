@@ -74,7 +74,7 @@
 			}
 						
 			.input{
-				column-count: 4;
+				column-count: 2;
 				column-gap: 30px;
 				column-rule-style: none;
 				font-size: 19px;
