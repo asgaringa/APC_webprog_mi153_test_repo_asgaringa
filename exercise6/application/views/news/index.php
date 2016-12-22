@@ -141,7 +141,7 @@
 		<td>EMAIL</td>
         <td>ADDRESS</td>
 		<td>GENDER</td>
-        <td>PHONE NUMBER</td>
+        <td>CELLPHONE NUMBER</td>
         <td>COMMENT</td>
 		<td>OPERATIONS</td>
 		
