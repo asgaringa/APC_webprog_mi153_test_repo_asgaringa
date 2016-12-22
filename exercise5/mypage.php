@@ -144,7 +144,7 @@
 		<button type="button" onclick="document.getElementById('Q4').innerHTML = 'ONLY PEOPLE WHO ASK ME THAT QUESTION'">CAN'T THINK OF ANYTHING ELSE TO PUT IN THIS BUTTON</button>
 
 		<h id="Q5">BEST TRAIT</h>
-		<button type="button" onclick="document.getElementById('Q5').innerHTML = 'SARCASM'">JUSTCLICK THIS</button>
+		<button type="button" onclick="document.getElementById('Q5').innerHTML = 'SARCASM'">JUST CLICK THIS</button>
 
 		<?php
 			$nameErr = $nNameErr = $emailErr = $genderErr = $cNumErr = $commentErr = "";
