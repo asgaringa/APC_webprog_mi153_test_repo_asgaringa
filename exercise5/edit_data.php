@@ -10,7 +10,7 @@
 	{
 		// variables for input data
 		$name = $_POST['name'];
-		$nName = $_POST['nName'];
+		$nName = $_POST['nickname'];
 		$email = $_POST['email'];
 		$hAd = $_POST['hAd'];
 		$gender = $_POST['gender'];
