@@ -34,7 +34,7 @@
 	
     <table align = center>
         <tr>
-            <td><label for="Name">Name</label></td>
+            <td><label for="Name">NAME</label></td>
             <td><input type="text" name="name" rows="10" cols="40"></input></td>
         </tr>
 		
