@@ -39,7 +39,7 @@
         </tr>
 		
         <tr>
-            <td><label for="Nickname">Nickname</label></td>
+            <td><label for="Nickname">NICKNAME</label></td>
             <td><input type="text" name="nName" rows="10" cols="40"></input></td>
         </tr>
 		
