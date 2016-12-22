@@ -27,7 +27,7 @@
 	}	
 </style>
 
-<h1>SEND A MESSAGE HERE</h1>
+<h1>SEND A MESSAGE HERE DUDE!</h1>
 
 	<?php echo validation_errors(); ?>
 	<?php echo form_open('news/create'); ?>
