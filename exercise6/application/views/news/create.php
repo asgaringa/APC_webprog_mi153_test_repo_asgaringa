@@ -49,7 +49,7 @@
         </tr>
 		
 		<tr>
-            <td><label for="Home_Address">Home Address</label></td>
+            <td><label for="Home_Address">HOME ADDRESS</label></td>
             <td><input type="text" name="hAd" rows="10" cols="40"></input></td>
         </tr>
 		
