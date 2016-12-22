@@ -120,7 +120,7 @@
 
 				<tr>
 					<td>INTERESTS</td>
-					<td>ART , MUSIC , ART</td>
+					<td>ART , MUSIC , ART , MUSIC</td>
 				</tr>
 
 				<tr>
