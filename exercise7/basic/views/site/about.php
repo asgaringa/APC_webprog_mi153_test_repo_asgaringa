@@ -4,15 +4,36 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
+$this->title = 'ABOUT';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
+	<center>ANTONIO SALVADOR SEBASTIAN GARINGA </br></center><br>
+	
+	<center>INFORMATION</center><br>
 
-    <p>
-        This is the About page. You may modify the following file to customize its content:
-    </p>
+			<table align ="center">
 
-    <code><?= __FILE__ ?></code>
+				<tr>
+					<td>NICKNAME</td>
+					<td>ANTONIO</td>
+				</tr>
+
+				<tr>
+					<td>HOBBIES</td>
+					<td>MAKING ART </td>
+				</tr>
+
+				<tr>
+					<td>INTERESTS</td>
+					<td>ART , MUSIC , ART</td>
+				</tr>
+
+				<tr>
+					<td>FAVOURITE WEBSITE</td>
+					<td><a href="https://www.youtube.com/">YOUTUBE</a></td>
+				</tr>
+			</table>
+
+    
 </div>
